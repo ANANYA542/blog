@@ -1,12 +1,43 @@
-# React + Vite
+# Country Delight
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React application that displays details of countries, including their population, capital, region, and more. It also features a search functionality, like and comment systems, and a login dialog.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+•⁠  ⁠*Country List*: Displays a list of countries fetched from an API with their basic details like name, population, region, and capital.
+•⁠  ⁠*Country Details*: On clicking a country from the list, users are redirected to a detailed view with more information about the selected country.
+•⁠  ⁠*Search Functionality*: Allows users to filter countries by name.
+•⁠  ⁠*Like System*: Users can "like" countries and see the number of likes.
+•⁠  ⁠*Comment System*: Users can add comments on individual countries.
+•⁠  ⁠*Login Dialog*: A modal dialog for users to log in.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+•⁠  ⁠React
+•⁠  ⁠React Router DOM (for navigation)
+•⁠  ⁠CSS for styling
+•⁠  ⁠Fetch API to fetch country data
+
+## Installation
+
+Follow the steps below to set up and run the project locally.
+
+### Prerequisites
+
+Before setting up the project, make sure you have the following installed:
+
+•⁠  ⁠[Node.js](https://nodejs.org/) (version 14.x or higher)
+•⁠  ⁠[npm](https://www.npmjs.com/) (Node Package Manager)
+
+### Step-by-Step Setup
+
+1.⁠ ⁠*Clone the repository*:
+   First, clone the project to your local machine using the following command:
+   ⁠ bash
+   git clone https://github.com/ANANYA542/blog.git
+
+2. Run the file:
+
+    ⁠bash
+   	npm install
+   	npm run dev
