@@ -33,11 +33,12 @@ Before setting up the project, make sure you have the following installed:
 
 1.⁠ ⁠*Clone the repository*:
    First, clone the project to your local machine using the following command:
-   ⁠ bash
+   
+   ```bash
    git clone https://github.com/ANANYA542/blog.git
+   
 
 2. Run the file:
-
-    ⁠bash
-   	npm install
-   	npm run dev
+   ```bash
+   npm install
+   npm run dev
