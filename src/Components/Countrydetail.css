@@ -1,0 +1,60 @@
+/* src/Components/CountryDetails.css */
+.country-details {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #ff4081;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    color: #ffffff;
+    display: flex;
+    margin-left: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 400px;
+}
+
+.country-details:hover {
+    transform: scale(1.02);
+}
+
+.country-details h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.country-details p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.country-details .error {
+    color: #e74c3c;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.country-details .loading {
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 600px) {
+    .country-details {
+        padding: 15px;
+    }
+
+    .country-details h1 {
+        font-size: 2rem;
+    }
+
+    .country-details p {
+        font-size: 1rem;
+    }
+}

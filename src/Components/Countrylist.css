@@ -1,0 +1,138 @@
+.country-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f0f8ff;
+    margin-top: 80px;
+}
+
+.country-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    margin: 15px;
+    padding: 20px;
+    width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.country-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.country-card h2 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin: 0 0 10px;
+}
+
+.country-card p {
+    color: #34495e;
+    margin: 5px 0;
+}
+
+.country-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(0, 123, 255, 0.2), rgba(138, 43, 226, 0.2));
+    border-radius: 12px;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.country-card h2, 
+.country-card p, 
+.country-card button {
+    position: relative;
+    z-index: 2;
+}
+
+button {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-top: 10px;
+    transition: transform 0.2s, color 0.2s;
+    z-index: 2;
+    display: inline-block;
+}
+
+button:hover {
+    transform: scale(1.2);
+    color: #ff4081;
+}
+
+.likes {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.comment-section {
+    margin-top: 15px;
+}
+
+.comment-section h3 {
+    margin: 10px 0;
+}
+
+.comment-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.comment-section li {
+    margin: 5px 0;
+}
+
+.comment-section form {
+    display: flex;
+    margin-top: 10px;
+}
+
+.comment-section input {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.comment-section button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.comment-section button:hover {
+    background-color: #e63972;
+}
+
+input[type="text"] {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    height: 50px;
+    background-color: #f0f8ff;
+    color: black; /* Set input text color to black */
+}
+
+input[type="text"]::placeholder {
+    color: black; /* Placeholder text color */
+}

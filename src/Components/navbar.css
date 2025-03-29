@@ -1,0 +1,92 @@
+/* src/Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff; /* Set a white background for visibility */
+    padding: 1rem 1rem; /* Padding for top and bottom, and horizontal spacing */
+    position: fixed; /* Fix the navbar to the top */
+    width: 100%; /* Full width of the viewport */
+    max-width: 1500px; /* Set a maximum width for larger screens */
+    left: 0; /* Align to the left */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Use full width of the navbar */
+    max-width: 1500px; /* Set a maximum width for the container */
+    margin: 0 auto; /* Center the content within the navbar */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    color: #333; /* Change to a dark color for visibility */
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.logo {
+    width: 40px; /* Adjust the size of the logo */
+    height: auto;
+    margin-right: 0.5rem; /* Space between logo and brand name */
+}
+
+.navbar-links {
+    font-size: large;
+    font-style: oblique;
+    list-style: none;
+    display: flex;
+    gap: 1.5rem; /* Increased gap for better spacing */
+}
+
+.navbar-links li {
+    display: inline;
+}
+
+.navbar-links a {
+    color: #333; /* Change to a dark color for visibility */
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+.navbar-links a:hover {
+    background-color: #555; /* Darker background on hover */
+    color: white; /* Change text color on hover for contrast */
+    border-radius: 5px; /* Rounded corners on hover */
+}
+
+.navbar-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.login-button, .signup-button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button {
+    background-color: #ee42a9; /* Blue background for login */
+    color: white;
+}
+
+.signup-button {
+    background-color: #eb1b9b; /* Green background for signup */
+    color: white;
+}
+
+.login-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.signup-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
