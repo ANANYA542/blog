@@ -31,14 +31,15 @@ Before setting up the project, make sure you have the following installed:
 
 ### Step-by-Step Setup
 
-1.⁠ ⁠*Clone the repository*:
-   First, clone the project to your local machine using the following command:
-   
+1. First, colne the project:
+
    ```bash
    git clone https://github.com/ANANYA542/blog.git
-   
 
 2. Run the file:
+
    ```bash
    npm install
    npm run dev
+
+   
